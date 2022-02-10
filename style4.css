@@ -1,0 +1,55 @@
+.box{
+    height: 300px;
+    width: 300px;
+    border: solid 10px #444;
+    border-radius: 50%;
+}
+.box img{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 0px 20px 0px #000;
+    border-radius: 50%;
+}
+.box img:hover{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    transition: .5s;
+    display: block;
+}
+.a4 h1:hover{
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0px 0px 10px #000, 0px 0px 20px #000, 0px 0px 40px #000;
+    transition: text-shadow 1.4s;
+}
+
+
+.product img{
+    height: 300px;
+    width: 300px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 50px 0px #000,0px 0px 0px 30px #eee;
+    transition: transform 1s;
+}
+.product img:hover{
+   
+    transform: rotate(25deg);
+}
+.product p::after{
+    margin-top: 20px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .6s;
+}
+.product p:hover{
+    width: 100%;
+    transition: width .6s;
+    animation: topp 3s 1s infinite ease-out;
+}
